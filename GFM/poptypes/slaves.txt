@@ -1,0 +1,290 @@
+sprite = 10
+strata = poor
+allowed_to_vote = no
+is_slave = yes
+color = { 17 17 17 }
+unemployment = yes
+
+rebel = {
+    cavalry = 0.0
+    artillery = 0.0
+    cuirassier = 0.0
+    dragoon = 0.0
+    guard = 0.0
+    hussar = 0.0
+    infantry = 0.0
+    irregular = 1
+}
+
+
+life_needs = {
+    #timber = 2
+}
+
+everyday_needs = {
+    coal = 1
+}
+
+luxury_needs = {
+    opium = 1.5
+}
+
+ideologies = {
+    liberal = {
+        factor = 2.5
+		modifier = {
+            factor = 0.5
+            country = { civilized = no }
+        }
+		modifier = {
+            factor = 1.25
+            NOT = { is_ideology_enabled = socialist }
+        }
+        modifier = {
+            factor = 1.25
+            NOT = { is_ideology_enabled = communist }
+        }
+		modifier = {
+            factor = 0.7
+            ruling_party_ideology = liberal
+        }
+		modifier = {
+			factor = 1.1
+			consciousness = 3
+		}
+		modifier = {
+			factor = 0.4
+			consciousness = 8
+		}
+    }
+    conservative = {
+        factor = 1
+		modifier = {
+            factor = 2
+            NOT = { militancy = 2 }
+        }
+		modifier = {
+            factor = 1.5
+            NOT = { militancy = 3 }
+        }
+		modifier = {
+            factor = 1.2
+            NOT = { consciousness = 3 }
+        }
+		modifier = {
+            factor = 1.25
+            NOT = { consciousness = 2 }
+        }
+		modifier = {
+            factor = 2
+            NOT = { consciousness = 1 }
+        }
+		modifier = {
+            factor = 0.1
+            militancy = 7
+        }
+		modifier = {
+            factor = 0.5
+            consciousness = 5
+        }
+    }
+	radical = {
+        factor = 1.5
+		modifier = {
+            factor = 0.5
+            country = { civilized = no }
+        }
+		modifier = {
+            factor = 2.0
+            ruling_party_ideology = socialist
+        }
+		modifier = {
+            factor = 4.0
+            ruling_party_ideology = communist
+        }
+		modifier = {
+            factor = 2.0
+            ruling_party_ideology = liberal
+        }
+		modifier = {
+            factor = 1.2
+            NOT = { is_ideology_enabled = socialist }
+        }
+        modifier = {
+            factor = 1.2
+            NOT = { is_ideology_enabled = communist }
+        }
+		modifier = {
+			factor = 1.33
+			consciousness = 2
+		}
+		modifier = {
+			factor = 1.5
+			consciousness = 3
+		}
+		modifier = {
+			factor = 1.5
+			AND = {
+				NOT = { is_ideology_enabled = communist }
+				consciousness = 6
+			}
+		}
+		modifier = {
+			factor = 1.5
+			AND = {
+				NOT = { is_ideology_enabled = communist }
+				consciousness = 7
+			}
+		}
+		modifier = {
+			factor = 1.5
+			AND = {
+				NOT = { is_ideology_enabled = communist }
+				consciousness = 8
+			}
+		}
+		modifier = {
+			factor = 2.0
+			AND = {
+				NOT = { is_ideology_enabled = communist }
+				consciousness = 9
+			}
+		}
+    }
+	socialist = { 
+		factor = 2 
+		modifier = {
+            factor = 0
+            country = { civilized = no }
+        }
+		modifier = {
+            factor = 0.7
+            ruling_party_ideology = socialist
+        }
+		modifier = {
+            factor = 1.5
+            ruling_party_ideology = liberal
+        }
+		modifier = {
+            factor = 1.5
+            NOT = { is_ideology_enabled = communist }
+        }
+		modifier = {
+			factor = 1.2
+			consciousness = 3
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 4
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 6
+		}
+		modifier = {
+			factor = 0.8
+			consciousness = 8
+		}
+		modifier = {
+			factor = 0.8
+			consciousness = 9
+		}
+		modifier = {
+			factor = 0.33
+			AND = {
+				consciousness = 9
+				is_ideology_enabled = communist
+			}
+		}
+	}
+	
+	communist = { 
+		factor = 1.35 
+		modifier = {
+            factor = 0
+            country = { civilized = no }
+        }
+		modifier = {
+            factor = 1.5
+            ruling_party_ideology = liberal
+        }
+		modifier = {
+            factor = 2.0
+            ruling_party_ideology = radical
+        }
+		modifier = {
+            factor = 3.0
+            ruling_party_ideology = socialist
+        }
+		modifier = {
+            factor = 0.5
+            NOT = { militancy = 4 }
+        } 		
+		modifier = {
+			factor = 1.2
+			militancy = 7
+		}
+		modifier = {
+			factor = 1.2
+			militancy = 8
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 4
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 7
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 8
+		}
+		modifier = {
+			factor = 1.5
+			consciousness = 9
+		}
+		modifier = {
+			factor = 1.5
+			consciousness = 10
+		}
+	}
+}
+issues = {
+    no_slavery = {
+        factor = 4
+        modifier = {
+            factor = 0
+            OR = {
+            NOT = { is_next_reform = no_slavery }
+            country = { civilized = no }
+            }
+        }
+		modifier = {
+            factor = 2.0
+			consciousness = 4
+        }
+    }
+
+    freedom_of_womb = {
+        factor = 4
+        modifier = {
+            factor = 0
+            OR = {
+                NOT = { is_next_reform = freedom_of_womb }
+                country = { civilized = no }
+            }
+        }
+    }
+
+    yes_slavery = {
+        factor = 1
+        modifier = {
+        factor = 0
+        OR = {
+            slavery = no_slavery
+            country = { civilized = no }
+            }
+        }
+    }
+}
