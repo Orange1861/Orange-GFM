@@ -1278,6 +1278,7 @@ country_event = {
 				sub_unit = { type = irregular value = current }
 			}
 		}
+		ai_chance = { factor = 1 }
 	}
     option = {
         name = "For the liberation of Arabia! §BPlay as Palestine§W"
@@ -1321,6 +1322,7 @@ country_event = {
 			}
 		}
 		change_tag_no_core_switch = PLS
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -1359,6 +1361,7 @@ country_event = {
 				call_ally = no
 			}
 		}
+		ai_chance = { factor = 1 }
 	}
     option = {
         name = "For the liberation of the Levant! §BPlay as the Alawites§W"
@@ -1377,7 +1380,77 @@ country_event = {
 			}
 		}
 		change_tag_no_core_switch = ALA
+		ai_chance = { factor = 0 }
 	}
 }
 
 ######## END OF THE OTTOMAN FILE ########
+
+country_event = {
+    id = 16051972
+    title = "Return Levant Land"
+    desc = "According to the K¨¹tahya Convention, we have to hand over Levant Land to Egypt."
+    picture = "kutayha"
+
+    trigger = {
+        tag = TUR
+		has_global_flag = convention_of_kutahya
+		NOT = { has_global_flag = oriental_crisis }
+		is_our_vassal = EGY
+        any_owned_province = {
+          OR = {
+            region = EGY_897
+            region = EGY_903
+            region = EGY_915
+            province_id = 917
+            province_id = 920
+            province_id = 919
+            province_id = 918
+            province_id = 916
+            province_id = 3357
+            province_id = 3474
+            province_id = 909
+            province_id = 908
+           }
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 5 }
+
+    option = {
+        name = "Alright."
+        any_owned = {
+          limit = {
+            OR = {
+               province_id = 908
+               province_id = 909
+               province_id = 3357
+               province_id = 920
+               province_id = 919
+               province_id = 917
+               province_id = 3474
+               province_id = 918
+               province_id = 916
+               province_id = 3358
+               province_id = 902
+               province_id = 906
+               province_id = 903
+               province_id = 912
+               province_id = 915
+               province_id = 3361
+               province_id = 913
+               province_id = 914
+               province_id = 897
+               province_id = 905
+               province_id = 900
+               province_id = 894
+               province_id = 848
+               province_id = 847
+              }
+            }
+           secede_province = EGY
+        }
+	}
+}
