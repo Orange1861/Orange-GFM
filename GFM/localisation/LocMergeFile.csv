@@ -1250,6 +1250,7 @@ rgo_changed;RGO Change Cooldown;;;;;;;;;;;;;
 rgo_changed_title;RGO Change Cooldown;;;;;;;;;;;;;
 rgo_changed_desc;You have recently taken a decision to change a RGO, you must wait a while before doing so again.;;;;;;;;;;;;;
 player_unciv_mobilization;Player Controlled Non-western Nation;;;;;;;;;;;;;
+player_unciv_buff;Player Controlled Weak Non-western Nation;;;;;;;;;;;;;
 developing_bioweapons;Bioweapons in Development;;;;;;;;;;;;;
 developing_bioweapons_desc;After this modifier runs down you will have access to a decision while at war to deploy the Solomon Virus.;;;;;;;;;;;;;
 experimental_bioweapon;The Solomon Virus;;;;;;;;;;;;;

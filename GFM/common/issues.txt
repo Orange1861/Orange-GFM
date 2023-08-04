@@ -10,6 +10,8 @@ party_issues = {
         free_trade = {
             max_tariff = 0.25
             min_tariff = -1
+			commerce_tech_research_bonus = 0.05
+			factory_output = 0.01
         }
     }
     economic_policy = {
@@ -85,6 +87,7 @@ party_issues = {
                 build_factory_invest = yes
                 expand_factory_invest = yes
                 build_railway_invest = yes
+				allow_foreign_investment = yes
                 can_invest_in_pop_projects = yes
             }
         }
@@ -108,6 +111,7 @@ party_issues = {
                 build_factory_invest = yes
                 expand_factory_invest = yes
                 build_railway_invest = yes
+				allow_foreign_investment = yes
                 can_invest_in_pop_projects = yes
             }
         }
@@ -452,6 +456,7 @@ political_reforms = {
         no_draft = {
             global_immigrant_attract = 0.03
             land_unit_start_experience = -5
+			education_efficiency_modifier = 0.01
             allow = {
                 OR = {
                     NOT = { war_policy = jingoism }
@@ -858,6 +863,7 @@ social_reforms = {
         administrative = yes
         next_step_only = yes
         no_health_care = {
+
         }
         trinket_health_care = {
             global_population_growth = 0.00075
@@ -955,8 +961,9 @@ social_reforms = {
         }
 
         child_labor_illegal = {
-            education_efficiency_modifier = 0.02
+            education_efficiency_modifier = 0.03
             global_immigrant_attract = 0.05
+			global_population_growth = 0.0005
         }
     }
 }
