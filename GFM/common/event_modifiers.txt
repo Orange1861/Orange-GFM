@@ -2601,7 +2601,7 @@ america_new_world = {
 
 california_gold_rush = {
     immigrant_attract = 5        #300%
-    population_growth = 0.01
+    population_growth = 0.02
     assimilation_rate = 1
     icon = 19
 }
@@ -4143,14 +4143,14 @@ immigrant_workers_csa = {
 }
 
 california_boom_modifier = {
-    immigrant_attract = 0.5
-    population_growth = 0.002
+    immigrant_attract = 1.0
+    population_growth = 0.003
     icon = 11
 }
 
 california_slow_boom_modifier = {
-    immigrant_attract = 0.25
-    population_growth = 0.001
+    immigrant_attract = 0.5
+    population_growth = 0.002
     icon = 11
 }
 
@@ -4379,7 +4379,7 @@ rise_of_stavanger = {
 swedish_assimilation = {
     local_factory_output = -0.05
     local_factory_throughput = -0.05
-    assimilation_rate = 0.2
+    assimilation_rate = 0.3
     icon = 20
 }
 
@@ -4439,8 +4439,8 @@ cotton_boom = {
 }
 
 colonization_law_mex = {
-	global_immigrant_attract = 0.1
-	assimilation_rate = 0.05
+	global_immigrant_attract = 0.2
+	assimilation_rate = 0.1
 	icon = 17
 }
 
