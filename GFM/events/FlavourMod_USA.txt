@@ -95,6 +95,8 @@ country_event = {
 		2198 = { add_province_modifier = { name = transisthmian_trade duration = 1460 } }
 		#Mexico
 		2162 = { add_province_modifier = { name = transisthmian_trade duration = 1460 } }
+		
+		country_event = { id = 99913 days = 2555 }
 	}
 }
 
@@ -104,16 +106,8 @@ country_event = {
     title = "The End of the California Gold Rush"
     desc = "EVTDESC99913"
     picture = "california_gold_rush"
-	fire_only_once = yes #don't change this wtf
 
-    trigger = {
-		year = 1855
-		OR = {
-			owns = 104
-			owns = 89
-		}
-		has_global_flag = cal_gen_ready
-    }
+	is_triggered_only = yes
 
     option = {
         name = "A mine is a hole in the ground with a liar standing next to it."
