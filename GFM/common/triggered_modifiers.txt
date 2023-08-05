@@ -800,7 +800,7 @@ help_ai_usa = {
     icon = 10
     tax_efficiency = 0.05
     supply_consumption = -0.05
-    influence_modifier = -0.05
+    influence_modifier = -0.1
     mobilisation_size = 0.01
 }
 
