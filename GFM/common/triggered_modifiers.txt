@@ -643,8 +643,8 @@ glory_prussia = {
     mobilisation_size = 0.1
     mobilisation_economy_impact = -0.5
     core_pop_militancy_modifier = -0.01
-    land_attack_modifier = 0.1
-	land_defense_modifier = 0.1
+    land_attack_modifier = 0.15
+	land_defense_modifier = 0.15
     land_organisation = 0.3
     war_exhaustion = -0.03
 }
@@ -1063,7 +1063,7 @@ player_unciv_buff = {
 		NOT = { tag = TKG }
     }
 	tax_efficiency = 0.1
-	land_defense_modifier = 0.05
+	land_defense_modifier = 0.1
     icon = 9
 }
 
@@ -1278,7 +1278,7 @@ save_the_nation3  = {
     suppression_points_modifier = 0.10
 
     land_organisation = 0.1
-    mobilisation_size = 0.04
+    mobilisation_size = 0.035
     supply_consumption = -0.20
     mobilization_impact = 0.5
     mobilisation_economy_impact = -0.25
@@ -1294,7 +1294,7 @@ save_the_nation3.5  = {
     suppression_points_modifier = 0.10
 
     land_organisation = 0.15
-    mobilisation_size = 0.045
+    mobilisation_size = 0.04
     supply_consumption = -0.25
     mobilization_impact = 0.75
     mobilisation_economy_impact = -0.375
@@ -1310,7 +1310,7 @@ save_the_nation4  = {
     suppression_points_modifier = 0.10
 
     land_organisation = 0.2
-    mobilisation_size = 0.05
+    mobilisation_size = 0.045
     supply_consumption = -0.30
     mobilization_impact = 1
     mobilisation_economy_impact = -0.5
@@ -1327,7 +1327,7 @@ save_the_nation4.5  = {
 
     land_organisation = 0.225
     land_unit_start_experience = 2.5
-    mobilisation_size = 0.06
+    mobilisation_size = 0.05
     supply_consumption = -0.30
     mobilization_impact = 1
     mobilisation_economy_impact = -0.58
@@ -1343,7 +1343,7 @@ save_the_nation5  = {
     research_points_modifier = 0.01
     land_organisation = 0.25
     land_unit_start_experience = 5
-    mobilisation_size = 0.07
+    mobilisation_size = 0.065
     supply_consumption = -0.30
     mobilization_impact = 1
     mobilisation_economy_impact = -0.66
@@ -1356,7 +1356,7 @@ help_ai = {
         NOT = { year = 1870 }
     }
     icon = 10
-    tax_efficiency = 0.10
+    tax_efficiency = 0.2
     administrative_efficiency_modifier = 0.03
     supply_consumption = -0.05
     education_efficiency_modifier = 0.15
@@ -1372,7 +1372,7 @@ help_ai_mid = {
         NOT = { year = 1900 }
     }
     icon = 10
-    tax_efficiency = 0.10
+    tax_efficiency = 0.15
     administrative_efficiency_modifier = 0.05
     supply_consumption = -0.1
     education_efficiency_modifier = 0.2
