@@ -1356,7 +1356,7 @@ help_ai = {
         NOT = { year = 1870 }
     }
     icon = 10
-    tax_efficiency = 0.05
+    tax_efficiency = 0.10
     administrative_efficiency_modifier = 0.03
     supply_consumption = -0.05
     education_efficiency_modifier = 0.15
