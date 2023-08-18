@@ -6372,6 +6372,7 @@ annex_africa = {
 
     can_use = {
         NOT = { has_country_flag = congo_master }
+		NOT = { year = 1905 }
         OR = {
             AND = {
                 THIS = { any_owned_province = { port = yes } }
@@ -6388,7 +6389,6 @@ annex_africa = {
                 is_secondary_power = yes
             }
             NOT = { has_country_modifier = neutrality }
-            civilized = yes
             has_global_flag = berlin_conference
         }
         NOT = {
@@ -6409,7 +6409,6 @@ annex_africa = {
             capital_scope = { continent = east_africa }
             capital_scope = { continent = south_africa }
         }
-        ai = yes
         OR = {
             war_with = THIS
             THIS = {
@@ -6797,6 +6796,7 @@ annex_africa_full = {
             neighbour = THIS
             war_with = THIS
         }
+		NOT = { year = 1905 }
         NOT = { is_our_vassal = THIS }
         NOT = { number_of_states = 2 }
         OR = {
@@ -6805,7 +6805,6 @@ annex_africa_full = {
         }
         THIS = {
             nationalism_n_imperialism = 1
-            capital_scope = { continent = europe }
             OR = {
                 is_greater_power = yes
                 is_secondary_power = yes
@@ -6816,7 +6815,6 @@ annex_africa_full = {
             civilized = yes
             has_global_flag = berlin_conference
         }
-        civilized = no
         NOT = {
             tag = MOR
             tag = ALD
@@ -6837,7 +6835,6 @@ annex_africa_full = {
             capital_scope = { continent = east_africa }
             capital_scope = { continent = south_africa }
         }
-        ai = yes
         OR = {
             war_with = THIS
             THIS = { NOT = { has_country_modifier = punitive_effects } }
