@@ -6399,6 +6399,7 @@ annex_africa = {
             tag = ETH
             tag = MAD
             tag = EGY
+			primary_culture = boer
             has_country_flag = post_colonial_country
         }
         civilized = no
@@ -6826,6 +6827,7 @@ annex_africa_full = {
             primary_culture = tigray
             primary_culture = oromo
             primary_culture = harari
+			primary_culture = boer
             has_country_flag = post_colonial_country
         }
         OR = {
