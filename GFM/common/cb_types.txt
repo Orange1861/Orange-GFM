@@ -8704,12 +8704,14 @@ make_puppet = {
             has_country_modifier = neutrality_modifier
             OR = {
 				AND = {
-					total_pops = 5000000
+					total_pops = 4000000
 					NOT = { has_global_flag = you_are_playing_mp }
+					is_greater_power = no
 				}
 				AND = {
 					total_pops = 4000000
 					has_global_flag = you_are_playing_mp
+					is_greater_power = no
 				}
 			}
         }
