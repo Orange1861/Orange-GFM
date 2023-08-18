@@ -8708,7 +8708,7 @@ make_puppet = {
 					NOT = { has_global_flag = you_are_playing_mp }
 				}
 				AND = {
-					total_pops = 2000000
+					total_pops = 5000000
 					has_global_flag = you_are_playing_mp
 				}
 			}
